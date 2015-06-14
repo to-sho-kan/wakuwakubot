@@ -12,7 +12,7 @@ module.exports = (robot) ->
   robot.hear /hoge/i, (res) ->
     res.send "HUGA!"
 
-  robot.hear /waku-waku?/i, (res) ->
+  robot.hear /waku-waku\?/i, (res) ->
     res.send "weekend!!"
 
   # robot.hear /badger/i, (res) ->
