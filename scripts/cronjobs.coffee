@@ -6,6 +6,7 @@ module.exports = (robot) ->
   # cronTest.start()
 
   wakuWakuAlertMessage = "@channel: waku-waku-weekend!! 始まるよ〜 :smile: "
-  wakuWakuAlert = new CronJob '0 10 * * 6,0', ->
+  # wakuWakuAlert = new CronJob '0 10 * * 6,0', ->
+  wakuWakuAlert = new CronJob '0 11 * * 6,0', ->
     robot.messageRoom 'general', wakuWakuAlertMessage, null, true, 'Asia/Tokyo'
   wakuWakuAlert.start()
