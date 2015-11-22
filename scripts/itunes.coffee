@@ -1,9 +1,9 @@
 # Description:
-#   Search iTunes' musinc info & images
+#   Search iTunes' music info & images
 #
 # Commands:
-#   wakuwakubot search music <query> - Seach iTunes' musinc info & images
-#   wakuwakubot search <num> music <query> - Seach iTunes' musinc info & images
+#   wakuwakubot search music <query> - Seach iTunes' music info & images
+#   wakuwakubot search <num> music <query> - Seach iTunes' music info & images
 
 https = require('https')
 
