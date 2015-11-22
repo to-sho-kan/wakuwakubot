@@ -20,7 +20,7 @@ module.exports = (robot) ->
         slack_message = ""
         results = JSON.parse(d).results
         for result in results
-          results += "#{result.collectionCensoredName}\n#{result.artworkUrl100}\n#{result.collectionViewUrl}\n--------------------\n"
+          slack_message += "#{result.collectionCensoredName}\n#{result.artworkUrl100}\n#{result.collectionViewUrl}\n--------------------\n"
 
         res.send slack_message
     ).on 'error', (e) ->
